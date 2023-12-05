@@ -1,0 +1,48 @@
+Fuel Consumption and CO2 Emissions Prediction
+Introduction:
+
+This repository contains Python scripts that demonstrate the process of predicting CO2 emissions based on fuel consumption and engine characteristics using machine learning techniques.
+File Descriptions:
+
+    fuel_consumption_data_downloader.py:
+    This script downloads a CSV file containing fuel consumption and CO2 emission data. It uses the Pandas library to read the dataset, visualize the relationship between engine size and emissions, and then splits the data into training and test sets using basic logic for further analysis.
+
+    fuel_consumption_regression_model.py:
+    This script builds a multiple linear regression model to predict CO2 emissions based on engine size, number of cylinders, and fuel consumption. It utilizes the Scikit-learn library to split the data into training and test sets and trains a linear regression model. It evaluates the model's performance using Mean Squared Error (MSE) and Variance score on the test set.
+
+Instructions:
+
+    Downloading the Data:
+        Run fuel_consumption_data_downloader.py to download the fuel consumption and CO2 emissions dataset from a specified URL. The data will be saved as 'FuelConsumption.csv'.
+
+    Exploring Data and Model Training:
+        Use fuel_consumption_data_downloader.py to explore the dataset and visualize the relationship between engine size and emissions.
+        Execute fuel_consumption_regression_model.py to train a multiple linear regression model on the dataset. The model uses engine size, cylinders, and fuel consumption to predict CO2 emissions.
+
+    Model Evaluation:
+        The script fuel_consumption_regression_model.py evaluates the trained model's performance using Mean Squared Error (MSE) and Variance score on the test set.
+
+Requirements:
+
+    Python 3.x
+    Pandas
+    Matplotlib
+    NumPy
+    Scikit-learn
+
+How to Run:
+
+    Install the required libraries using pip:
+
+    pip install pandas matplotlib numpy scikit-learn
+
+    Run the scripts in the following order:
+        fuel_consumption_data_downloader.py
+        fuel_consumption_regression_model.py
+
+Note:
+
+    Ensure an active internet connection to download the dataset.
+    The scripts assume the availability of the specified dataset at the provided URL.
+
+Place this README file in the same directory as the scripts (fuel_consumption_data_downloader.py and fuel_consumption_regression_model.py). This README provides an overview of the scripts, their functionality, instructions to execute them, and necessary requirements. Adjustments can be made based on any specific details or additional information related to the scripts and their usage.
