@@ -1,0 +1,35 @@
+# Logistic Regression for Telecom Customer Churn Prediction
+
+This Python script uses Logistic Regression from Scikit-learn to predict customer churn for a telecommunications company.
+
+## Functionality
+- Loads the dataset from a provided URL.
+- Performs data pre-processing by selecting specific features and converting the target column to integers.
+- Splits the dataset into training and testing sets.
+- Builds a Logistic Regression model using the training data.
+- Evaluates the model using the test data.
+- Prints Jaccard index, confusion matrix, classification report, and log loss.
+
+## How to Use
+1. Ensure Python is installed on your machine.
+2. Install the required libraries by running:
+3. Run the `logistic_regression_telecom.py` script.
+4. The script will output evaluation metrics for the Logistic Regression model.
+
+## Why Logistic Regression?
+Logistic Regression is used here because it's suitable for binary classification tasks like predicting customer churn. It predicts the probability of a customer leaving (churn) based on given features.
+
+## Dataset Information
+- The dataset contains information about customers leaving a telecommunications company.
+- Features include customer demographics, services signed up for, account information, etc.
+- Target column: 'churn' (indicating whether a customer left or not).
+
+## Libraries Used
+- Pandas: Data manipulation and analysis.
+- NumPy: Numerical operations and arrays.
+- Scikit-learn: Machine learning library for building models and evaluation.
+
+## Credits
+- Author: [Your Name]
+- Original Notebook Author: Saeed Aghabozorgi
+- Other Contributors: Joseph Santarcangelo
