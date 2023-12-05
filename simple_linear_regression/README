@@ -1,0 +1,29 @@
+# Simple Linear Regression Model for CO2 Emissions Prediction
+
+This repository contains three Python scripts designed to perform simple linear regression for predicting CO2 emissions based on the engine size and fuel consumption of vehicles.
+
+## Scripts Description
+
+### Script_1.py: Data Loading and Visualization
+- This script downloads a CSV file containing vehicle fuel consumption and CO2 emission data.
+- It preprocesses the data, selects specific columns (engine size, cylinders, fuel consumption, CO2 emissions), and performs basic visualization (histograms and scatter plots).
+
+### Script_2.py: Train/Test Split and Linear Regression Modeling
+- The second script loads the processed data from the first script.
+- It performs a train/test split (80/20) on the data.
+- Utilizes simple linear regression to build a model predicting CO2 emissions based on engine size.
+- Visualizes the linear regression line fitted to the training data.
+
+### Script_3.py: Model Evaluation
+- This script loads the processed data, performs linear regression, and evaluates the model's performance using various metrics.
+- Calculates Mean Absolute Error, Mean Squared Error, Root Mean Squared Error, and R-squared values to evaluate model accuracy on the test set.
+
+## Result Explanation
+
+The result of the evaluation script (Script_3.py) indicates:
+- **Mean Absolute Error (MAE)**: The average absolute difference between predicted and actual CO2 emissions is approximately 20.04 units.
+- **Mean Squared Error (MSE)**: The average of squared differences between predicted and actual values is around 789.39.
+- **Root Mean Squared Error (RMSE)**: On average, the model's predictions are approximately 28.10 units away from the actual CO2 emissions.
+- **R-squared (R²)**: The model explains approximately 81% of the variability in CO2 emissions.
+
+These evaluation metrics provide insights into the performance of the linear regression model. Lower values for MAE, MSE, and RMSE indicate a smaller deviation between predicted and actual values, while a higher R-squared value closer to 1 suggests a better fit of the model to the data.
