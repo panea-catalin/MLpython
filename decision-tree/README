@@ -1,0 +1,37 @@
+Decision Tree Classifier for Drug Classification
+
+This Python script demonstrates the use of a Decision Tree Classifier to predict the appropriate drug for a patient based on their attributes.
+Overview
+
+The script uses a dataset containing patient information such as age, sex, blood pressure, cholesterol, and the drug they responded to. It performs the following steps:
+
+    Data Download: Downloads the dataset from a provided URL.
+    Data Preprocessing: Processes the dataset by encoding categorical variables using LabelEncoder from scikit-learn.
+    Model Training: Splits the data into training and testing sets, then trains a Decision Tree Classifier using the training data.
+    Model Evaluation: Predicts drug classes for the test set and evaluates the model's accuracy.
+    Visualization: Generates a visualization of the trained decision tree.
+
+Usage
+
+    Requirements:
+        Python 3.x
+        pandas
+        scikit-learn
+        matplotlib
+
+    Running the Script:
+        Ensure the required libraries are installed in your Python environment.
+        Run the script using python your_script_name.py.
+
+    Output:
+        The script will display the accuracy score of the model and visualize the decision tree.
+
+File Descriptions
+
+    1.py: The main Python script containing the decision tree classifier implementation.
+    drug200.csv: Dataset used for training and testing.
+
+Notes
+
+    The dataset is based on patient attributes and the drugs they responded to, allowing the model to predict a drug for a new patient.
+    The decision tree visualization helps understand the decision-making process of the model.
