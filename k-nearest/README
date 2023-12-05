@@ -1,0 +1,57 @@
+README
+Scripts Description:
+1. 1.data_exploration.py
+
+This Python script performs data exploration and analysis on a telecommunications customer dataset (teleCust1000t.csv). It covers the following tasks:
+
+    Data Loading: Loads the dataset from a specified URL using Pandas.
+    Data Exploration:
+        Displays the count of each category in the 'custcat' column.
+        Generates a histogram for the 'income' column to visualize its distribution.
+    Feature Set Preparation:
+        Selects relevant columns as features (X) and the 'custcat' column as the target variable (y).
+    Data Normalization and Splitting:
+        Normalizes the data using StandardScaler from sklearn.preprocessing.
+        Splits the dataset into training and testing sets (80% train, 20% test) using train_test_split from sklearn.model_selection.
+
+2. 2.model.py
+
+This Python script builds a K-Nearest Neighbors (KNN) classification model on the telecommunications customer dataset (teleCust1000t.csv). It includes the following functionalities:
+
+    Data Loading and Preprocessing:
+        Loads the dataset from a specified URL using Pandas.
+        Prepares feature set (X) and target variable (y).
+        Normalizes the data using StandardScaler from sklearn.preprocessing.
+        Splits the dataset into training and testing sets (80% train, 20% test) using train_test_split from sklearn.model_selection.
+
+    Model Creation and Evaluation:
+        Builds a KNN classification model using KNeighborsClassifier from sklearn.neighbors.
+        Trains the KNN model on the training set and predicts on the test set.
+        Evaluates the accuracy of the model on both the training and testing sets.
+        Determines the best value of k for KNN by testing different numbers of neighbors.
+
+    Output:
+        Displays the train set accuracy and test set accuracy of the KNN model.
+        Produces a plot showing the accuracy of the model for different numbers of neighbors (K).
+
+Running the Scripts:
+
+    Prerequisites:
+        Ensure you have Python installed (Python 3.x recommended).
+        Install required libraries: numpy, pandas, matplotlib, scikit-learn.
+
+    Execution:
+        Run 1.data_exploration.py to perform data exploration and prepare the dataset.
+        Run 2.model.py to build the KNN classification model and evaluate its performance.
+
+Expected Outputs:
+Output of 1.data_exploration.py:
+
+    Counts of each category in the 'custcat' column.
+    Histogram showing the distribution of the 'income' column.
+
+Output of 2.model.py:
+
+    Train set accuracy and test set accuracy of the KNN model.
+    Plot displaying the model accuracy for different numbers of neighbors (K).
+    The best accuracy achieved and the corresponding value of k for the model.
